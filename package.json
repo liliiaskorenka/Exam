@@ -28,6 +28,9 @@
     "jquery": "^3.1.1",
     "jquery-parallax.js": "^1.4.3",
     "jquery-scrollToTop": "^0.4.2",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "bxslider": "^4.2.11",
+    "jquery-form-validator": "^2.3.54",
+    "jquery-datetime-picker": "^2.5.4"
   }
 }

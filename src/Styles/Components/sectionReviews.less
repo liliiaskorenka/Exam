@@ -1,14 +1,11 @@
 .sectionReviews {
   height: 758px;
 }
-.rowReviews {
-  width: 66%;
-  margin: 0 auto;
-  text-align: center;
-}
+
 @media (max-width: 1199px) {
-  .rowReviews {
-    width: 80%;
+  .reviews {
+    width: 77% !important;
+    left: 11% !important;
   }
 }
 
@@ -18,9 +15,9 @@
   position: absolute;
   z-index: 20;
   top: -13px;
-  width: 52%;
+  width: 56%;
   text-align: center;
-  left: 24%;
+  left: 22%;
   padding-left: 45px;
   padding-right: 45px;
 }
@@ -40,7 +37,7 @@
 }
 @media (max-width: 768px) {
   .guestReviews {
-    line-height: 35px;
+    line-height: 27px;
   }
   .guest {
     padding-bottom: 35px !important;
@@ -85,4 +82,47 @@
 }
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: @navigationIcons;
+}
+
+@media (max-width: 375px) {
+  .whiteDividerSectionReviews {
+    font-size: 27px !important;
+    margin-top: 45px;
+  }
+  .quotes {
+    font-size: 60px !important;
+    margin-top: 0 !important;
+  }
+  .sectionReviews .whiteDivider:after {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .guest {
+    font-size: 11px !important;
+  }
+  .guestReviews {
+    text-indent: 0 !important;
+    font-size: 19px !important;
+    line-height: 27px !important;
+  }
+  .reviews {
+    margin-top: 80px;
+  }
+  .formSectionReservationscol1, .formSectionReservationscol2 {
+    width: 80% !important;
+  }
+}
+@media (max-width: 320px) {
+  .reviews {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .whiteDividerSectionReviews {
+    font-size: 24px !important;
+  }
+  .quotes {
+    font-size: 50px!important;
+    margin-top: -8px !important;
+  }
 }

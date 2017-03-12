@@ -2,12 +2,22 @@
   background-image: url("../../Images/pattern.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 710px;
+  min-height: 710px;
 }
+
+
+
 @media (max-width: 1199px) {
   .sectionReservations {
     background-repeat: repeat;
-    height: 1190px;
+    height: 1250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .sectionReservations {
+    background-repeat: repeat;
+    height: 1390px;
   }
 }
 
@@ -81,9 +91,28 @@
   margin-left: -8px;
   margin-top: 100px;
 }
+@media (max-width: 768px) {
+  .img1sectionReservations,
+  .img2sectionReservations{
+    width: 70%;
+  }
+}
 .h2DividerSectionSectionReservations {
   margin-left: 59px;
-  padding-top: 22px;
+  padding-top: 18px;
+}
+@media (max-width: 1199px) {
+  .h2DividerSectionSectionReservations,
+  .textSectionReservatios,
+  .submitSectionReservations {
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .textSectionReservatios {
+   width: 80%;
+  }
 }
 .formSectionReservationscol1 {
   width: 90%;
@@ -120,4 +149,18 @@
   font-size: 9.8px;
   text-align: left;
   margin-bottom: -18px;
+}
+
+@media (max-width: 991px) {
+  .formSectionReservationscol1,
+  .formSectionReservationscol2{
+    width: 50% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 320px) {
+  .sectionReservations .h2DividerSection {
+    font-size: 27px !important;
+  }
 }

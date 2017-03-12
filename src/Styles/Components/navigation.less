@@ -332,15 +332,23 @@
 .navbar-toggle .icon-bar {
   transition: all .25s;
 }
-.navbar-default.navbar-toggle.icon-bar:nth-child(2) {
+.navbar-default .navbar-toggle .icon-bar:nth-child(2) {
   transform: rotate(45deg) translate(4.4px, 4.4px);
 }
-.navbar-default.navbar-toggle.icon-bar:nth-child(3) {
+.navbar-default .navbar-toggle .icon-bar:nth-child(3) {
   width: 0%;
   opacity: 0;
 }
-.navbar-default.navbar-toggle.icon-bar:last-child {
+.navbar-default .navbar-toggle .icon-bar:last-child {
   transform: rotate(-45deg) translate(4.4px, -4.4px);
+}
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2),
+.navbar-default .navbar-toggle.collapsed .icon-bar:last-child {
+  transform: none;
+}
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3) {
+  width: 22px;
+  opacity: 1;
 }
 
 .dropdown:hover > .dropdown-menu {
