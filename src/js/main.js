@@ -8,9 +8,9 @@ jQuery(function($) {
 $.datetimepicker.setLocale('en');
 jQuery('#datetimepicker').datetimepicker();
 
-$.validate({
+/*$.validate({
     modules : 'date, security'
-});
+});*/
 $('.bxslider').bxSlider({
     mode: 'fade',
     captions: true,
@@ -18,3 +18,11 @@ $('.bxslider').bxSlider({
     pause: 4000
 });
 
+$.validate({
+    modules : 'date, security',
+    onSuccess : function($form) {
+        var msg = 'Thank you ' + $('#exampleInputName', $form).val() + '!';
+        toastr.success(msg, 'Liliia Skorenka Restaurant', {timeOut: 3000});
+        return false;
+    }
+});

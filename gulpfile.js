@@ -25,7 +25,8 @@ gulp.task("css:vendor", function() {
         "node_modules/font-awesome/css/font-awesome.css",
         "node_modules/jquery-scrollToTop/dist/css/scrollToTop.css",
         "node_modules/jquery-datetime-picker/jquery.datetimepicker.css",
-        "node_modules/bxslider/dist/jquery.bxslider.css"
+        "node_modules/bxslider/dist/jquery.bxslider.css",
+        "node_modules/toastr/build/toastr.min.css"
 
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
@@ -48,12 +49,9 @@ gulp.task("js:vendor", function() {
         "node_modules/php-date-formatter/js/php-date-formatter.js",
         "node_modules/jquery-datetime-picker/jquery.datetimepicker.js",
         "node_modules/jquery-form-validator/form-validator/jquery.form-validator.js",
-        "node_modules/bxslider/dist/jquery.bxslider.js"
+        "node_modules/bxslider/dist/jquery.bxslider.js",
         //"node_modules/jquery-ui/ui/"
-
-
-
-        // "node_modules/toastr/build/toastr.min.js"
+        "node_modules/toastr/build/toastr.min.js"
     ])
         .pipe(concat("vendor.js"))
         .pipe(gulpIf(!isDevelopment, uglify()))

@@ -31,6 +31,7 @@
     "jquery-ui": "^1.12.1",
     "bxslider": "^4.2.11",
     "jquery-form-validator": "^2.3.54",
-    "jquery-datetime-picker": "^2.5.4"
+    "jquery-datetime-picker": "^2.5.4",
+    "toastr": "^2.1.2"
   }
 }

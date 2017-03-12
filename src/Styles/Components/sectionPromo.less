@@ -21,7 +21,7 @@
 }
 .calloutText:after{
   content: "";
-  background-image: url("../Images/Decoration.png");
+  background-image: url("../../Images/Decoration.png");
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,26 +39,32 @@
   .calloutText {
     font-size: 70px;
     line-height: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
   }
 }
-@media (max-width: 768px){
+@media (max-width: 414px) {
+  .whiteButton,
+  .blackButton {
+    text-align: center !important;
+
+  }
+}
+@media (max-width: 767px){
 .calloutText {
   font-size: 40px;
   line-height: 62px;
+  margin-bottom: 0px;
 }
-.blackButton {
-  text-align: center!important;
-}
-  .whiteButton {
-    text-align: center!important;
+
+  .whiteButton,
+  .blackButton{
     margin-top: 60px;
   }
 }
 @media (max-width: 375px) {
   .calloutText {
-    margin-bottom: 15px;
+    margin-bottom: -35px;
   }
 
   .h2SectionPromo {
