@@ -8,6 +8,8 @@ var gulpIf = require("gulp-if");
 var autoprefixer = require("gulp-autoprefixer");
 var sync = require("browser-sync").create();
 var image = require("gulp-image");
+var imagemin = require("gulp-imagemin");
+
 var isDevelopment = true;
 gulp.task("css:own", function() {
     return gulp.src("src/Styles/main.less")
@@ -51,7 +53,9 @@ gulp.task("js:vendor", function() {
         "node_modules/jquery-form-validator/form-validator/jquery.form-validator.js",
         "node_modules/bxslider/dist/jquery.bxslider.js",
         //"node_modules/jquery-ui/ui/"
-        "node_modules/toastr/build/toastr.min.js"
+        "node_modules/toastr/build/toastr.min.js",
+        "node_modules/jquery-googlemap/jquery.googlemap.js"
+
     ])
         .pipe(concat("vendor.js"))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -70,17 +74,8 @@ gulp.task("html", function() {
 });
 gulp.task("images", function() {
     return gulp.src("src/Images/*.{png,jpg,gif,jpeg,svg}")
-    // .pipe(image({
-    //     pngquant: true,
-    //     optipng: false,
-    //     zopflipng: true,
-    //     jpegRecompress: false,
-    //     jpegoptim: true,
-    //     mozjpeg: true,
-    //     gifsicle: true,
-    //     svgo: true,
-    //     concurrent: 10
-    // }))
+        // @todo uncomment at final ver because it slows down project
+        /*.pipe(imagemin())*/
         .pipe(gulp.dest("dist/Images"));
 });
 gulp.task("css", ["css:own", "css:vendor"]);
