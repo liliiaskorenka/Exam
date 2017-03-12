@@ -1,0 +1,90 @@
+.sectionPromo {
+  background-image: url("../../Images/BgSection1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.h2SectionPromo {
+  padding-top: 216px;
+}
+
+.calloutText {
+
+  font-size: 90px;
+  font-family: "YesevaOneRegular", serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  line-height: 118px;
+  position: relative;
+}
+.calloutText:after{
+  content: "";
+  background-image: url("../Images/Decoration.png");
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 258px;
+  height: 88px;
+}
+
+@media (min-width: 992px) and (max-width: 1219px) {
+  .calloutText {
+    margin-top: 100px;
+    font-size: 88px;
+  }
+}
+@media  (max-width: 991px) {
+  .calloutText {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 50px;
+
+  }
+}
+
+.blackButton {
+  text-align: right;
+}
+.buttonPromoBookTable {
+  background: rgba(0,0,0,0.7);
+  font-family: "LatoRegular",serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 17px 50px;
+  border: 1px solid rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  text-align: center;
+
+
+}
+
+.buttonPromoBookTable:hover{
+  text-decoration: none;
+}
+
+.buttonPromoSeeMenu {
+  background: rgba(255,255,255,0.4);
+  font-family: "LatoRegular", serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 17px 48px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.buttonPromoSeeMenu:hover{
+  text-decoration: none;
+}
+@media  (max-width: 780px) {
+.buttonPromoBookTable,
+.buttonPromoSeeMenu {
+font-size: 14px
+}
+}
+
