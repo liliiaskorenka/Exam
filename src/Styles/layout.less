@@ -10,17 +10,28 @@ html, body {
   min-height: 100%;
 
 }
-.header {
-  height: 100px;
-  position: absolute;
+header {
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 20;
+  height: 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
 }
+@media (min-width: 1220px) {
+  header.largeHeader {
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+  }
+
+  header.smallHeader {
+    height: 72px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  }
+}
 @media (max-width: 991px) {
-  .header {
+  header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
     height: 120px;
     position: fixed;
@@ -36,6 +47,7 @@ html, body {
   height: 320px;
   background-color: #191919;
   border-bottom: 6px solid #303030;
+  clear: both;
 }
 @media (min-width: 1199px) {
   .containerFooter {
@@ -83,4 +95,21 @@ html, body {
   border-radius: 41px;
   width: 40px;
   height: 40px;
+}
+.sidebar {
+  background: #936;
+  float: left;
+  width: 300px;
+}
+.contentIngredients {
+  background: #396;
+  margin-left: 300px;
+
+  padding-bottom: 320px;
+}
+.wrapper:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
 }

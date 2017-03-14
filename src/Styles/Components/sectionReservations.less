@@ -124,6 +124,42 @@
   margin-top: 20px;
   margin-left: 63px;
   border-radius: 0;
+  border: 0;
+}
+.submitSectionReservations:hover,
+.submitSectionReservations:visited,
+.submitSectionReservations:focus,
+.submitSectionReservations:active{
+  color: #ffffff;
+  border: 0;
+}
+.hvr-curl-bottom-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-curl-bottom-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-bottom-left:hover:before, .hvr-curl-bottom-left:focus:before, .hvr-curl-bottom-left:active:before {
+  width: 25px;
+  height: 25px;
 }
 
 .filtersubmit {

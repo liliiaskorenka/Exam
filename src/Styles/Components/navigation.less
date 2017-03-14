@@ -11,8 +11,17 @@
   }
 }
 .ulNavbar {
-  padding-top: 45px;
+ padding-top: 45px;
   margin-right: -69px;
+}
+@media (min-width: 1220px) {
+  header.largeHeader .ulNavbar {
+    padding-top: 45px;
+  }
+
+  header.smallHeader .ulNavbar {
+    padding-top: 18px;
+  }
 }
 @media (max-width: 991px) {
   .ulNavbar {
@@ -170,7 +179,6 @@
     float: left !important;
     position: relative;
     top: 120px;
-    left: -95px;
     border: none;
   }
 }
@@ -194,6 +202,12 @@
 
   .navbar-collapse.collapse {
     display: none !important;
+    height: ~"calc(100% - 120px)" !important;
+    top: 120px;
+    position: fixed;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding-right: 0;
 
   }
 

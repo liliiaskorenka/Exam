@@ -94,12 +94,14 @@
   border: 1px solid rgba(0,0,0,0.8);
   text-transform: uppercase;
   text-align: center;
-
+  transition: background 2s;
 
 }
 
 .buttonPromoBookTable:hover{
   text-decoration: none;
+  color: white;
+  background: rgba(0,0,0,0.4);
 }
 
 .buttonPromoSeeMenu {
@@ -112,10 +114,21 @@
   border: 1px solid white;
   text-transform: uppercase;
   text-align: center;
+  transition: background 2s;
 
 }
 
 .buttonPromoSeeMenu:hover{
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.2);
+}
+.buttonPromoSeeMenu:active,
+.buttonPromoSeeMenu:visited,
+.buttonPromoSeeMenu:focus,
+.buttonPromoBookTable:active,
+.buttonPromoBookTable:visited,
+.buttonPromoBookTable:focus{
   text-decoration: none;
 }
 @media  (max-width: 780px) {
