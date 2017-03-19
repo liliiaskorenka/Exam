@@ -61,10 +61,9 @@ gulp.task("js:vendor", function() {
         "node_modules/toastr/build/toastr.min.js",
         "node_modules/jquery-googlemap/jquery.googlemap.js",
         "node_modules/datatables/media/js/jquery.dataTables.js",
-        "node_modules/twbs-pagination/tests/jquery.twbsPagination.js",
-
+        "node_modules/twbs-pagination/jquery.twbsPagination.js",
         "node_modules/bootstrap-star-rating/js/star-rating.js",
-        /*"Animate-Elements-In-When-They-Come-Into-View-jQuery-CSS3-Animate-It-Plugin/js/css3-animate-it.js",*/
+        "Animate-Elements-In-When-They-Come-Into-View-jQuery-CSS3-Animate-It-Plugin/js/css3-animate-it.js",
         "node_modules/datatables/media/js/jquery.dataTables.js"
     ])
         .pipe(concat("vendor.js"))

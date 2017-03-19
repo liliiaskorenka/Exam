@@ -56,23 +56,20 @@ $(document).on("scroll",function(){
         $("header").removeClass("smallHeader").addClass("largeHeader");
     }
 });
-/*
+
 $("#pagination-demo").twbsPagination({
     totalPages: 35,
-    visiblePages: 5,
-    onPageClick: function (event, page) {
-        $("#page-content").text("Page " + page);
-    }
+    visiblePages: 5
 });
-*/
 
 
-/*$("#input-248").rating({
- step: 1,
- starCaptions: {1: "Very Poor", 2: "Poor", 3: "Ok", 4: "Good", 5: "Very Good"},
- starCaptionClasses: {1: "text-danger", 2: "text-warning", 3: "text-info", 4: "text-primary", 5: "text-success"}
- });
-*/
+
+$("#input-248").rating({
+    step: 1,
+    starCaptions: {1: "Very Poor", 2: "Poor", 3: "Ok", 4: "Good", 5: "Very Good"},
+    starCaptionClasses: {1: "text-danger", 2: "text-warning", 3: "text-info", 4: "text-primary", 5: "text-success"}
+});
+
 
 $("#tableSectionMenu").DataTable({
     ajax: {
