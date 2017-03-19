@@ -1,0 +1,64 @@
+@media (min-width: 1220px) {
+  header.largeHeader {
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+  }
+
+  header.smallHeader {
+    height: 72px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  }
+}
+@media (max-width: 1219px) and (min-width: 992px) {
+  header.smallHeader {
+    height: 72px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  }
+}
+
+
+@media (min-width: 1220px) {
+  header.largeHeader .logo{
+    width: 100%;
+  }
+  header.smallHeader .logo{
+    width: 60% !important;
+  }
+  header.smallHeader.active {
+    color: palevioletred;
+  }
+}
+
+@media (max-width: 1219px) and (min-width: 992px) {
+
+  header.smallHeader .logo{
+    width: 97% !important;
+    margin-left: 14px;
+    display: inline-block;
+  }
+  header.smallHeader .navbar-header{
+    float: left;
+  }
+  header.smallHeader .ulNavbar{
+    padding-top: 25px;
+  }
+  header.smallHeader .navbar-collapse{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header.smallHeader .menuLink{
+    padding: 0 8px;
+  }
+
+}
+
+@media (min-width: 1220px) {
+  header.largeHeader .ulNavbar {
+    padding-top: 45px;
+  }
+
+  header.smallHeader .ulNavbar {
+    padding-top: 18px;
+  }
+}
+

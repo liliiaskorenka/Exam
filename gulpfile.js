@@ -29,7 +29,11 @@ gulp.task("css:vendor", function() {
         "node_modules/jquery-datetime-picker/jquery.datetimepicker.css",
         "node_modules/bxslider/dist/jquery.bxslider.css",
         "node_modules/toastr/build/toastr.min.css",
-        "node_modules/datatables/media/css/jquery.dataTables.min.css"
+        "node_modules/datatables/media/css/jquery.dataTables.min.css",
+        "ihover/ihover.css",
+        "Animate-Elements-In-When-They-Come-Into-View-jQuery-CSS3-Animate-It-Plugin/css/animations.css",
+        "node_modules/bootstrap-star-rating/css/star-rating.css",
+        "node_modules/datatables/media/css/jquery.dataTables.css"
 
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
@@ -56,8 +60,12 @@ gulp.task("js:vendor", function() {
         //"node_modules/jquery-ui/ui/"
         "node_modules/toastr/build/toastr.min.js",
         "node_modules/jquery-googlemap/jquery.googlemap.js",
-        "node_modules/datatables/media/js/jquery.dataTables.js"
+        "node_modules/datatables/media/js/jquery.dataTables.js",
+        "node_modules/twbs-pagination/tests/jquery.twbsPagination.js",
 
+        "node_modules/bootstrap-star-rating/js/star-rating.js",
+        /*"Animate-Elements-In-When-They-Come-Into-View-jQuery-CSS3-Animate-It-Plugin/js/css3-animate-it.js",*/
+        "node_modules/datatables/media/js/jquery.dataTables.js"
     ])
         .pipe(concat("vendor.js"))
         .pipe(gulpIf(!isDevelopment, uglify()))
@@ -80,6 +88,11 @@ gulp.task("images", function() {
         /*.pipe(imagemin())*/
         .pipe(gulp.dest("dist/Images"));
 });
+gulp.task("json", function() {
+    return gulp.src("src/json/*.json")
+        .pipe(gulp.dest("dist/json"));
+});
+
 gulp.task("css", ["css:own", "css:vendor"]);
 gulp.task("js", ["js:own", "js:vendor"]);
 gulp.task("watch", ["build"], function() {
@@ -95,6 +108,8 @@ gulp.task("watch", ["build"], function() {
     gulp.watch("dist/Fonts/**/*.{ttf,otf}", ["fonts"]).on("change", sync.reload);
     gulp.watch("src/Images/*.{png,jpg,gif,jpeg,svg}", ["images"]);
     gulp.watch("dist/Images/*.{png,jpg,gif,jpeg,svg}", ["images"]).on("change", sync.reload);
+    gulp.watch("src/json/*.json", ["json"]);
+    gulp.watch("dist/json/*.json", ["json"]).on("change", sync.reload);
 });
-gulp.task("build", ["html", "css", "js", "fonts", "images"]);
+gulp.task("build", ["html", "css", "js", "fonts", "images", "json"]);
 gulp.task("default", ["build", "watch"]);

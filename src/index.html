@@ -51,28 +51,26 @@
                             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 
                                 <ul class="ulNavbar">
-                                    <li class="menuItem"><a href="#" class="menuLink">Home</a></li>
-                                    <li class="menuItem"><a href="/sectionIgredients.html" class="menuLink">About</a></li>
+                                    <li class="menuItem"><a href="#home" class="menuLink active">Home</a></li>
+
+                                    <li class="menuItem"><a href="/descriptionSectionAbout.html#about" class="menuLink">About</a></li>
+
                                     <li class="dropdown menuItem">
-                                        <a href="#" class="dropdown-toggle menuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Igredients<span class="caret"></span></a>
+                                        <a href="/sectionIgredients.html#ingredients" class="dropdown-toggle menuLink" >Ingredients</a>
+                                    </li>
+
+                                    <li class="dropdown menuItem">
+                                        <a href="#menu" class="dropdown-toggle menuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Action</a></li>
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Another action</a></li>
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Something else here</a></li>
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Separated link</a></li>
+                                            <li class="pulldownMenuItem"><a href="/sectionMenuDescription.html" class="pulldownMenuLink">Menu Description</a></li>
+                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Gallery Dish</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown menuItem">
-                                        <a href="#" class="dropdown-toggle menuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Action</a></li>
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Another action</a></li>
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Something else here</a></li>
-                                            <li class="pulldownMenuItem"><a href="#" class="pulldownMenuLink">Separated link</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menuItem"><a href="#" class="menuLink">Reviews</a></li>
-                                    <li class="menuItem"><a href="#" class="menuLink">Reservations</a></li>
+
+                                    <li class="menuItem"><a href="#reviews" class="menuLink">Reviews</a></li>
+
+                                    <li class="menuItem"><a href="#reservations" class="menuLink">Reservations</a></li>
+
                                     <li class="menuItemIcon"><a href="#" class="menuLinkIcon"><span class="fa fa-twitter"></span></a></li>
                                     <li class="menuItemIcon"><a href="#" class="menuLinkIcon"><span class="fa fa-youtube"></span></a></li>
                                     <li class="menuItemIcon"><a href="#" class="menuLinkIcon"><span class="fa fa-facebook"></span></a></li>
@@ -88,7 +86,7 @@
 
 
     <main class="content">
-        <section class="sectionPromo">
+        <section class="sectionPromo" id="home">
             <div class="container">
                 <div class="row h2SectionPromo">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -117,7 +115,7 @@
 
 
 
-        <section class="sectionAbout">
+        <section class="sectionAbout" id="about">
             <div class="container">
                 <div class="row">
 
@@ -153,7 +151,7 @@
 
         </section>
 
-        <section class="sectionIgredients parallax-window" data-parallax="scroll" data-image-src="Images/BgSection3.jpg">
+        <section class="sectionIgredients parallax-window" data-parallax="scroll" data-image-src="Images/BgSection3.jpg" id="ingredients">
             <div class="container">
                 <div class="row">
 
@@ -195,7 +193,7 @@
             </div>
         </section>
 
-        <section class="sectionMenu">
+        <section class="sectionMenu" id="menu" >
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 divHeaderSectionMenu">
@@ -342,7 +340,7 @@
             </div>
         </section>
 
-        <section class="sectionReviews">
+        <section class="sectionReviews" id="reviews">
 
                         <ul class="bxslider">
                             <li class="bxsliderItem">
@@ -407,7 +405,7 @@
 
         </section>
 
-        <section class="sectionReservations">
+        <section class="sectionReservations" id="reservations">
             <div class="container">
                 <div class="row">
 
@@ -475,7 +473,7 @@
 
             </div>
         </section>
-        <div id="map" style="height: 300px;"></div>
+        <div id="map" style="height: 300px"></div>
     </main>
 </div>
 
