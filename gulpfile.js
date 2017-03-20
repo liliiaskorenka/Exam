@@ -33,7 +33,8 @@ gulp.task("css:vendor", function() {
         "ihover/ihover.css",
         "Animate-Elements-In-When-They-Come-Into-View-jQuery-CSS3-Animate-It-Plugin/css/animations.css",
         "node_modules/bootstrap-star-rating/css/star-rating.css",
-        "node_modules/datatables/media/css/jquery.dataTables.css"
+        "node_modules/datatables/media/css/jquery.dataTables.css",
+        "node_modules/hover.css/css/hover-min.css"
 
     ])
         .pipe(gulpIf(!isDevelopment, nano()))
