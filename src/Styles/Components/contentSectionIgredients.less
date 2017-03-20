@@ -1,3 +1,6 @@
+.pageSectionIngredients .largeHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)) !important;
+}
 .contentIngredients {
   padding-top: 410px;
   padding-left: 50px;
@@ -27,10 +30,54 @@
 }
 .wrapperSectionIngredients {
   background-image: url("../../Images/ingredients.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  min-height: 100%;
 
 }
-
+@media (max-width: 992px) and (min-width: 768px) {
+  .ih-item.square {
+    width: 60% !important;
+    height: 60% !important;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 492px) {
+  .ih-item.square {
+    width: 100% !important;
+    height: 100% !important;
+    margin-bottom: 10%;
+  }
+  .contentIngredients {
+    padding-left: 0;
+  }
+  .sectionIgredientsUl {
+    padding-left: 10px;
+  }
+  .rowImgSectionIngredients {
+    margin-bottom: 0 !important;
+  }
+}
+@media (min-width: 492px) and (max-width: 768px) {
+  .ih-item.square {
+    width: 70% !important;
+    height: 70% !important;
+    margin-bottom: 10%;
+  }
+  .contentIngredients {
+    padding-left: 15px;
+  }
+  .sectionIgredientsUl {
+    padding-left: 60px;
+  }
+  .rowImgSectionIngredients {
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 490px) {
+  .titleSectionIgredients {
+    font-size: 20px !important;
+  }
+}
 
 .sidebar {
   border-right: 2px dashed grey;

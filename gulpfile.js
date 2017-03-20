@@ -9,6 +9,7 @@ var autoprefixer = require("gulp-autoprefixer");
 var sync = require("browser-sync").create();
 var image = require("gulp-image");
 var imagemin = require("gulp-imagemin");
+var rigger = require("gulp-rigger");
 
 var isDevelopment = true;
 gulp.task("css:own", function() {
@@ -80,6 +81,7 @@ gulp.task("fonts", function() {
 });
 gulp.task("html", function() {
     return gulp.src("src/*.html")
+        .pipe(rigger())
         .pipe(gulp.dest("dist"));
 });
 gulp.task("images", function() {
