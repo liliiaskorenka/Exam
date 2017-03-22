@@ -3,7 +3,6 @@
 }
 .contentIngredients {
   padding-top: 410px;
-  padding-left: 50px;
 }
 .sectionIgredientsUl {
   list-style: none;
@@ -34,22 +33,10 @@
   min-height: 100%;
 
 }
-@media (max-width: 992px) and (min-width: 768px) {
-  .ih-item.square {
-    width: 60% !important;
-    height: 60% !important;
-    margin-bottom: 10%;
-  }
-}
+
 @media (max-width: 492px) {
-  .ih-item.square {
-    width: 100% !important;
-    height: 100% !important;
-    margin-bottom: 10%;
-  }
-  .contentIngredients {
-    padding-left: 0;
-  }
+
+
   .sectionIgredientsUl {
     padding-left: 10px;
   }
@@ -57,15 +44,13 @@
     margin-bottom: 0 !important;
   }
 }
-@media (min-width: 492px) and (max-width: 768px) {
+@media (min-width: 660px) and (max-width: 768px) {
   .ih-item.square {
-    width: 70% !important;
-    height: 70% !important;
-    margin-bottom: 10%;
+    width: 90% !important;
+    height: 100% !important;
+
   }
-  .contentIngredients {
-    padding-left: 15px;
-  }
+
   .sectionIgredientsUl {
     padding-left: 60px;
   }
@@ -91,10 +76,11 @@
   font-weight: bold;
 }
 .ih-item.square {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   box-shadow: 1px 1px 3px white;
+  margin-bottom: 10%;
 }
 .ih-item img {
   border-radius: 11px;
@@ -108,4 +94,51 @@
 
 .headerSectionIngredients {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)) !important;
+}
+
+@media (min-width: 531px) and (max-width: 768px) {
+  .text-center {
+    margin-left: -120px;
+  }
+}
+@media (max-width: 530px) {
+  .pagination-sm > li.page-item {
+    display: none !important;
+  }
+  .pagination-sm > li.first,
+  .pagination-sm > li.prev,
+  .pagination-sm > li.next,
+  .pagination-sm > li.last {
+    display: inline !important;
+  }
+  .text-center {
+    margin-left: -150px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 605px) {
+  .infoIngredientsTitle {
+    font-size: 14px !important;
+    margin: 20px 0 0 0 !important;
+  }
+  .infoIngredientsDescription {
+    padding-top: 15px !important;
+  }
+}
+
+@media (max-width: 420px){
+  .infoIngredientsTitle {
+    font-size: 10px !important;
+    margin: 15px 0 0 0 !important;
+  }
+  .infoIngredientsDescription {
+    font-size: 9px !important;
+    padding-top: 5px !important;
+  }
+}
+
+@media (max-width: 364px){
+  .infoIngredientsDescription {
+    display: none !important;
+  }
 }
